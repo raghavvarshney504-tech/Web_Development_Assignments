@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Leave Request Form</title>
+</head>
+
+<body>
+
+    <h1 align="center">Employee Leave Request Form</h1>
+    <hr>
+
+    <form>
+
+        
+    
+        
+
+            <label for="name">Employee Name:</label>
+            <input type="text" id="name" name="employee_name"
+                   placeholder="Enter your full name" required>
+            <br><br>
+
+            <label for="empid">Employee ID:</label>
+            <input type="text" id="empid" name="employee_id"
+                   placeholder="Enter the Employee Id"
+                   <br><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@company.com" required>
+            <br><br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="hr">Human Resources</option>
+                <option value="it">Information Technology</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="sales">Sales</option>
+                <option value="operations">Operations</option>
+                <option value="research">Research & Development</option>
+            </select>
+
+        <br><br>
+
+        
+        
+        
+
+            <label>Leave Category:</label><br>
+
+            <input type="radio" id="casual" name="leave_type"
+                   value="Casual Leave" required>
+            <label for="casual">Casual Leave</label>
+            <br><br>
+
+            <input type="radio" id="sick" name="leave_type"
+                   value="Sick Leave">
+            <label for="sick">Sick Leave</label>
+            <br><br>
+
+            <input type="radio" id="earned" name="leave_type"
+                   value="Earned Leave">
+            <label for="earned">Earned Leave</label>
+            <br><br>
+
+            <input type="radio" id="wfh" name="leave_type"
+                   value="Work From Home">
+            <label for="wfh">Work From Home</label>
+            <br><br>
+
+            <input type="radio" id="other" name="leave_type"
+                   value="Other">
+            <label for="other">Other</label>
+
+            <br><br><br>
+
+            <label for="start_date">Start Date:</label>
+            <input type="date" id="start_date" name="start_date" required>
+            <br><br><br>
+
+            <label for="end_date">End Date:</label>
+            <input type="date" id="end_date" name="end_date" required>
+            <br><br>
+
+            <label for="days">Number of Leave Days:</label>
+            <input type="number" id="days" name="leave_days"
+                   min="1" max="365" step="1"
+                   placeholder="Enter number of days" required>
+        
+
+        <br><br><br>
+
+        
+        
+            <b>Contact & Availability</b>
+
+            <label>Are you reachable during your leave?</label><br>
+
+            <input type="radio" id="reachable_yes"
+                   name="reachable" value="Yes" required>
+            <label for="reachable_yes">Yes</label>
+            <input type="radio" id="reachable_no"
+                   name="reachable" value="No">
+            <label for="reachable_no">No</label>
+
+            <br><br><br>
+
+            <label for="contact">Alternate Contact Number:</label>
+            <input type="tel" id="contact" name="alternate_contact"
+                   placeholder="Enter contact number"
+                   pattern="[0-9]{10}"
+                   maxlength="10"
+                   title="Enter a valid 10-digit phone number">
+        <br><br><br>
+
+        
+        
+        <b>Leave Reason</b>
+
+            <label for="reason">Reason for Leave:</label><br>
+            <textarea id="reason" name="leave_reason"
+                      rows="5" cols="50"
+                      placeholder="Enter the reason for your leave..."
+                      required></textarea>
+        
+
+        <br><br><br>
+
+        
+    
+        <b>Supporting Document</b>
+
+            <label for="document">
+                Upload Supporting Document (Optional):
+            </label>
+           <br><br><br>
+            
+
+
+            <b>Declaration</b>
+
+            <input type="checkbox" id="declaration"
+                   name="declaration" required>
+
+            <label for="declaration">
+                I declare that the information provided above is
+                true and correct to the best of my knowledge.
+            </label>
+             <br><br><br>
+
+        <br>
+
+    
+        <input type="submit" value="Submit Leave Request">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+    <br>
+    <hr>
+
+
+    <h2>Leave Categories and Descriptions</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0" >
+        <thead bgcolor="Silver"
+        <tr>
+            <th>Leave Category</th>
+            <th>Description</th>
+        </tr>
+<tbody bgcolor ="White"
+        <tr>
+            <td>Casual Leave</td>
+            <td>For personal or short-term requirements.</td>
+        </tr>
+
+        <tr>
+            <td>Sick Leave</td>
+            <td>For illness, medical appointments or health-related needs.</td>
+        </tr>
+
+        <tr>
+            <td>Earned Leave</td>
+            <td>Leave accumulated and used for planned vacations or personal work.</td>
+        </tr>
+
+        <tr>
+            <td>Work From Home</td>
+            <td>Allows employees to work remotely instead of taking complete leave.</td>
+        </tr>
+
+        <tr>
+            <td>Other</td>
+            <td>For leave requirements that do not fit the above categories.</td>
+        </tr>
+    </table>
+
+</body>
+</html>
