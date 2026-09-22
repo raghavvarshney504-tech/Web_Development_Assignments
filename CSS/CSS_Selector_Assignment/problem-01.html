@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Listing Portal - Problem 01</title>
+    <style>
+        /* -------------------------------------------------------------
+           1. UNIVERSAL SELECTOR
+           ------------------------------------------------------------- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        /* -------------------------------------------------------------
+           2. ELEMENT SELECTORS
+           ------------------------------------------------------------- */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #111111;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px #cccccc;
+        }
+
+        button {
+            background-color: #f43f5e;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            padding: 8px 16px;
+            font-size: 13px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        img {
+            width: 140px;
+            height: 140px;
+            display: block;
+        }
+
+       #movie-portal{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* -------------------------------------------------------------
+           4. CLASS SELECTORS
+           ------------------------------------------------------------- */
+        .movie-card {
+            display: flex;
+            background-color: #ffffff;
+            border: 1px solid #fecdd3;
+            border-radius: 4px;
+            overflow: hidden;
+            height: 140px;
+        }
+
+        .poster {
+            width: 140px;
+            height: 140px;
+            background-color: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .details {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .book-btn {
+            background-color: #f43f5e;
+            color: #ffffff;
+            margin-top: 12px;
+            align-self: flex-start;
+        }
+
+        
+        h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        h2 {
+            font-size: 16px;
+            color: #1e293b;
+            margin-bottom: 8px;
+            text-shadow: 0px 0px 1px #888888;
+        }
+
+        .release-date {
+            font-size: 13px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="portal-header">Now Showing - Movie Listing Portal</h1>
+
+    <div id="movie-portal">
+
+        
+        <div class="movie-card">
+            <div class="poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbcWBOKTRnuQBYpi_AEu12NaQgSaSBpEpUYYUGDVQwbw&s=10" alt="ET Poster">
+            </div>
+            <div class="details">
+                <h2>ET (2022)</h2>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+        
+
+        
+        <div class="movie-card">
+            <div class="poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWLCLD10GYnKT1nAVvctcqG5kBiTgWn1FQHQKeaVyn8g&s=10" alt="Jhund Poster">
+            </div>
+            <div class="details">
+                <h2>Jhund</h2>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="movie-card">
+            <div class="poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeONUl_S9CxN7tqkCDuSuW0kGHbRV0qF2keeSRMh1-w&s=10" alt="Gangubai Kathiawadi Poster">
+            </div>
+            <div class="details">
+                <h2>Gangubai Kathiawadi</h2>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        
+        <div class="movie-card">
+            <div class="poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkfPFdUlVtsRlMfjGMMP2kOL19E1yBpMy-UPLhPpySg&s=10" alt="Radhe Shyam Poster">
+            </div>
+            <div class="details">
+                <h2>Radhe Shyam</h2>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        
+        <div class="movie-card">
+            <div class="poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtpe06H_SEggzmJ0zgNZCDuSACkACfgLv6Jq0G41fFVw&s" alt="Uncharted Poster">
+            </div>
+            <div class="details">
+                <h2>Uncharted</h2>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+        
+        <div class="movie-card">
+            <div class="poster">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9s1naV3T_h378vBhMYysfmMInSKzrbTXjFY49cJ2jQ&s=10" alt="The Batman Poster">
+            </div>
+            <div class="details">
+                <h2>The Batman</h2>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="book-btn">Book tickets</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
