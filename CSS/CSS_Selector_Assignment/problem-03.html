@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Industry Mentor Programme</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #202938;
+        }
+
+        
+        .container {
+            width: 900px;
+            margin: auto;
+            padding: 45px 20px;
+        }
+
+        
+
+        .why-coach {
+            text-align: center;
+        }
+
+        .why-coach h1 {
+            font-size: 28px;
+            margin-bottom: 25px;
+            color: #202938;
+        }
+
+       
+        .coach-boxes {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .coach-box {
+            width: 50%;
+            min-height: 118px;
+            padding: 25px;
+            border-radius: 12px;
+            color: white;
+            text-align: left;
+        }
+
+        .coach-box:first-child {
+            background-color: #3674e8;
+        }
+
+        .coach-box:last-child {
+            background-color: #7070cf;
+        }
+
+        .coach-box h2 {
+            margin: 0 0 12px 0;
+            font-size: 20px;
+        }
+
+        .coach-box p {
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        
+
+        .join-section {
+            margin-top: 80px;
+            text-align: center;
+        }
+
+        .join-section h1 {
+            font-size: 27px;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .steps {
+            display: flex;
+            gap: 22px;
+            justify-content: center;
+        }
+
+        .step-card {
+            width: 33.33%;
+            min-height: 135px;
+            border: 1px solid #f2dce1;
+            border-radius: 12px;
+            padding: 25px 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .icon {
+            color: #ff1744;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .step-card p {
+            margin: 0;
+            color: #555;
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        
+        .button-container {
+            margin-top: 28px;
+        }
+
+        .mentor-button {
+            display: inline-block;
+            background-color: #ff003d;
+            color: white;
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .mentor-button:hover {
+            background-color: #d90035;
+        }
+
+        
+
+        @media (max-width: 700px) {
+
+            .container {
+                width: 100%;
+                padding: 30px 15px;
+            }
+
+            .coach-boxes,
+            .steps {
+                flex-direction: column;
+            }
+
+            .coach-box,
+            .step-card {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        
+
+        <section class="why-coach">
+
+            <h1>Why Coach?</h1>
+
+            <div class="coach-boxes">
+
+                
+                <div class="coach-box">
+
+                    <h2>Invest In People</h2>
+
+                    <p>
+                        Give back to the tech community and help new developers
+                        launch their careers, prepare for jobs, and grow.
+                    </p>
+
+                </div>
+
+                <div class="coach-box">
+
+                    <h2>Recruit Talent</h2>
+
+                    <p>
+                        Be the first to mentor talented students and help them
+                        become high quality candidates for your company or industry.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        
+
+        <section class="join-section">
+
+            <h1>How To Join Industry Mentor Programme</h1>
+
+            <p class="subtitle">
+                All Masai School students will have the opportunity to work
+                with an Industry Mentor in the last 12 weeks of their course.
+            </p>
+
+
+            
+
+            <div class="steps">
+                <div class="step-card">
+
+                    <div class="icon">▣</div>
+
+                    <p>
+                        Apply to our Industry Mentor Programme
+                        to get started. Let us know why you want
+                        to join us and how you can help our students.
+                    </p>
+
+                </div>
+
+
+                
+                <div class="step-card">
+
+                    <div class="icon">☷</div>
+
+                    <p>
+                        Choose the course you want to Mentor.
+                    </p>
+
+                </div>
+
+
+                
+                <div class="step-card">
+
+                    <div class="icon">▣</div>
+
+                    <p>
+                        Meet Masai students once per week for
+                        45-60 mins virtually.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            
+
+            <div class="button-container">
+
+                <a href="#" class="mentor-button">
+                    APPLY TO BECOME A MENTOR
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
