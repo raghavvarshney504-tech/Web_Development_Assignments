@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Periodic Table of Elements</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 
+        
+
+        b
+        
+           
+        }
+
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(18, 32px);
+            grid-template-rows: repeat(7, 32px);
+            gap: 4px;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .box {
+            width: 32px;
+            height: 32px;
+            border: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        
+        .c-cyan { 
+            background-color: #06b6d4; 
+            color: #0f172a; 
+            border: 1px solid #0891b2;
+            text-shadow: 0px 0px 1px #ffffff;
+        }
+
+
+        .c-mint { 
+            background-color: #10b981; 
+            color: #0f172a;
+            border: 1px solid #059669;
+        }
+
+    
+        .c-coral { 
+            background-color: #fb923c; 
+            color: #0f172a; 
+            border: 1px solid #ea580c;
+        }
+
+
+        .c-indigo { 
+            background-color: #6366f1; 
+            color: #ffffff;
+            border: 1px solid #4f46e5;
+        }
+
+
+        .c-amber { 
+            background-color: #f59e0b; 
+            color: #0f172a;
+            border: 1px solid #d97706;
+        }
+
+        
+        .c-rose { 
+            background-color: #f43f5e; 
+            color: #ffffff;
+            border: 1px solid #e11d48;
+        }
+
+        
+        .c-sky { 
+            background-color: #38bdf8; 
+            color: #0f172a;
+            border: 1px solid #0284c7;
+        }
+
+    
+        .c-violet { 
+            background-color: #a855f7; 
+            color: #ffffff;
+            border: 1px solid #9333ea;
+        }
+
+        
+        .c-pearl { 
+            background-color: #e2e8f0; 
+            color: #0f172a;
+            border: 1px solid #cbd5e1;
+        }
+
+        
+        .c-slateteal { 
+            background-color: #334155; 
+            color: #f8fafc;
+            border: 1px solid #475569;
+        }
+
+    
+        .c-lavender-box { 
+            background-color: #c084fc; 
+            border: 2px solid #8b5cf6; 
+        }
+
+        
+        .silicon-box {
+            grid-column: 4 / span 3;
+            grid-row: 2 / span 2;
+            width: 104px;
+            height: 104px;
+            background-color: #10b981;
+            color: #022c22;
+            border: 2px solid #34d399;
+            padding: 6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .silicon-box .num {
+            text-align: right;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .silicon-box .symbol {
+            font-size: 34px;
+            font-weight: bold;
+            line-height: 1;
+            margin-top: -5px;
+        }
+
+        .silicon-box .name {
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        
+        .f-block {
+            display: grid;
+            grid-template-columns: repeat(15, 32px);
+            grid-template-rows: repeat(2, 32px);
+            gap: 2px;
+            border: 1px solid #334155;
+            background-color: #1e293b;
+            padding: 2px;
+        }
+
+        .f-box {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            font-size: 10px;
+            padding: 2px;
+            font-weight: bold;
+        }
+
+        
+        .f-lanthanide {
+            background-color: #a855f7;
+            color: #ffffff;
+            border: 1px solid #7e22ce;
+        }
+
+        
+        .f-actinide {
+            background-color: #c084fc;
+            color: #0f172a;
+            border: 1px solid #a855f7;
+        }
+
+        .f-box.bottom-right {
+            align-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        .f-box.bottom-center {
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .col-1 { grid-column: 1; }
+        .col-2 { grid-column: 2; }
+        .col-3 { grid-column: 3; }
+        .col-4 { grid-column: 4; }
+        .col-13 { grid-column: 13; }
+        .col-14 { grid-column: 14; }
+        .col-15 { grid-column: 15; }
+        .col-16 { grid-column: 16; }
+        .col-17 { grid-column: 17; }
+        .col-18 { grid-column: 18; }
+    </style>
+</head>
+<body>
+
+    <h1>THE PERIODIC TABLE OF ELEMENTS</h1>
+
+    <div class="table-container">
+        <div class="periodic-table">
+            
+        
+            <div class="box c-cyan col-1">H</div>
+            <div class="box c-pearl col-18"></div>
+
+    
+            <div class="box c-mint col-1"></div>
+            <div class="box c-coral col-2">4</div>
+            
+            
+            <div class="silicon-box">
+                <div class="num">14</div>
+                <div class="symbol">Si</div>
+                <div class="name">Silicon</div>
+            </div>
+
+            <div class="box c-rose col-13"></div>
+            <div class="box c-sky col-14"></div>
+            <div class="box c-sky col-15"></div>
+            <div class="box c-sky col-16"></div>
+            <div class="box c-violet col-17"></div>
+            <div class="box c-pearl col-18"></div>
+
+            
+            <div class="box c-mint col-1"></div>
+            <div class="box c-coral col-2">12</div>
+            
+            <div class="box c-amber col-13"></div>
+            <div class="box c-rose col-14"></div>
+            <div class="box c-sky col-15"></div>
+            <div class="box c-sky col-16"></div>
+            <div class="box c-violet col-17"></div>
+            <div class="box c-pearl col-18"></div>
+
+            <!-- ROW 4 -->
+            <div class="box c-mint col-1"></div>
+            <div class="box c-coral col-2">20</div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-amber col-13"></div>
+            <div class="box c-rose col-14"></div>
+            <div class="box c-rose col-15"></div>
+            <div class="box c-sky col-16"></div>
+            <div class="box c-violet col-17"></div>
+            <div class="box c-pearl col-18"></div>
+
+            
+            <div class="box c-mint col-1"></div>
+            <div class="box c-coral col-2">38</div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-amber col-13"></div>
+            <div class="box c-amber col-14"></div>
+            <div class="box c-rose col-15"></div>
+            <div class="box c-rose col-16"></div>
+            <div class="box c-violet col-17"></div>
+            <div class="box c-pearl col-18"></div>
+
+            <!-- ROW 6 -->
+            <div class="box c-mint col-1"></div>
+            <div class="box c-coral col-2">56</div>
+            <div class="box c-lavender-box col-3"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-amber col-13"></div>
+            <div class="box c-amber col-14"></div>
+            <div class="box c-amber col-15"></div>
+            <div class="box c-rose col-16"></div>
+            <div class="box c-violet col-17"></div>
+            <div class="box c-pearl col-18"></div>
+
+            <!-- ROW 7 -->
+            <div class="box c-mint col-1"></div>
+            <div class="box c-coral col-2">88</div>
+            <div class="box c-lavender-box col-3"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-indigo"></div>
+            <div class="box c-slateteal col-13"></div>
+            <div class="box c-slateteal col-14"></div>
+            <div class="box c-slateteal col-15"></div>
+            <div class="box c-slateteal col-16"></div>
+            <div class="box c-slateteal col-17"></div>
+            <div class="box c-slateteal col-18"></div>
+
+        </div>
+
+        
+        <div class="f-block">
+            
+            <div class="f-box f-lanthanide">La</div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+            <div class="f-box f-lanthanide"></div>
+
+            <!-- Actinides Row -->
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide bottom-center">Am</div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide"></div>
+            <div class="f-box f-actinide bottom-right">No</div>
+        </div>
+    </div>
+
+</body>
+</html>
