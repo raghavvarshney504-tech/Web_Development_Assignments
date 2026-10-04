@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout 1</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 130px 130px 130px;
+            grid-template-areas:
+                "A A B B"
+                "C D D D"
+                "E E E E";
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .box {
+            background-color: cyan;
+            color: black;
+            font-size: 35px;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .a { grid-area: A; }
+        .b { grid-area: B; }
+        .c { grid-area: C; }
+        .d { grid-area: D; }
+        .e { grid-area: E; }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+
+    </div>
+
+</body>
+</html>

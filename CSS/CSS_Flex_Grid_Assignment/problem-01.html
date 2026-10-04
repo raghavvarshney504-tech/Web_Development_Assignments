@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLA Photo Gallery</title>
+
+    <style>
+        h1 {
+            background-color: teal;
+            color: white;
+            text-align: center;
+        }
+
+        .item {
+            background-color: teal;
+            color: white;
+            text-align: start;
+        }
+
+        .class {
+            height: 550px;
+            width: 1300px;
+            border: 2px dashed white ;
+            padding:10px;
+            align-content:center;
+
+            display: grid;
+
+            justify-content: center;
+            align-content: center;
+
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            gap: 10px;
+        }
+
+        .class > div {
+            height: 200px;
+            width: 300px;
+
+            border: 2px solid yellow;
+            border-radius: 5px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content:center;
+        }
+
+        .class img {
+            height: 190px;
+            width: 290px;
+            object-fit: cover;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="item">GLA UNIVERSITY</h1>
+
+    <center>
+        <div
+            <big> Photo Gallery </big></div>
+    
+    </center>
+
+    <div class="class">
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmmTbPQD8eAA04fa1AiRdAqPOYmCm-J-N0OTLHrCsaQ&s=10"
+                alt="GLA Logo">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sSLn_JaODq6btdv09i-5M3rbc5ItovGNLyIJSzhwcA&s=10"
+                alt="GLA University">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmmTbPQD8eAA04fa1AiRdAqPOYmCm-J-N0OTLHrCsaQ&s=10"
+                alt="GLA">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sSLn_JaODq6btdv09i-5M3rbc5ItovGNLyIJSzhwcA&s=10"
+                alt="GLA University">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPmmTbPQD8eAA04fa1AiRdAqPOYmCm-J-N0OTLHrCsaQ&s=10"
+                alt="GLA">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3sSLn_JaODq6btdv09i-5M3rbc5ItovGNLyIJSzhwcA&s=10"
+                alt="GLA University">
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+
+    <style>
+        body {
+            background-color: #eeeeee;
+            font-family: Arial;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 2px 2px 15px lightgrey;
+        }
+
+        .screen {
+            height: 80px;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px lightgrey;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        .key {
+            height: 80px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 2px 2px 10px lightgrey;
+        }
+
+        .operator {
+            background-color: black;
+            color: white;
+        }
+
+        .clear {
+            background-color: red;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="screen"></div>
+
+        <div class="buttons">
+
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key operator">+</div>
+
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key operator">-</div>
+
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key operator">x</div>
+
+            <div class="key clear">C</div>
+            <div class="key">0</div>
+            <div class="key operator">=</div>
+            <div class="key operator">/</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
