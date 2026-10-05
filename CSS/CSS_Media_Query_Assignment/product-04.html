@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 60px 350px 350px 350px;
+
+    gap: 15px;
+
+    grid-template-areas:
+        "nav nav"
+        "left right1"
+        "left right2"
+        "left right3";
+}
+
+/* Navigation */
+
+.navigation {
+    grid-area: nav;
+
+    background-color: yellow;
+
+    font-size: 35px;
+    padding: 10px;
+}
+
+/* Left Box */
+
+.left-box {
+    grid-area: left;
+
+    background-color: red;
+
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* Right Boxes */
+
+.right-box1 {
+    grid-area: right1;
+
+    background-color: lime;
+
+    padding: 10px;
+    font-size: 18px;
+}
+
+.right-box2 {
+    grid-area: right2;
+
+    background-color: lime;
+
+    padding: 10px;
+    font-size: 18px;
+}
+
+.right-box3 {
+    grid-area: right3;
+
+    background-color: lime;
+
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   MEDIUM SCREEN
+   ========================= */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .container {
+        width: 90%;
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-template-rows: 60px 300px 110px;
+
+        grid-template-areas:
+            "nav nav nav"
+            "left left left"
+            "right1 right2 right3";
+    }
+
+    .navigation {
+        font-size: 35px;
+    }
+
+    .left-box {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================
+   SMALL SCREEN
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        grid-template-rows:
+            70px
+            350px
+            230px
+            230px
+            230px;
+
+        grid-template-areas:
+            "nav"
+            "left"
+            "right1"
+            "right2"
+            "right3";
+    }
+
+    .navigation {
+        font-size: 40px;
+    }
+
+    .left-box,
+    .right-box1,
+    .right-box2,
+    .right-box3 {
+        font-size: 30px;
+        padding: 20px;
+    }
+}
+</style>
+<body>
+
+    <div class="container">
+
+        <div class="navigation">
+            Navigation
+        </div>
+
+        <div class="left-box">
+            LEFT BOX
+        </div>
+
+        <div class="right-box1">
+            RIGHT BOX 1
+        </div>
+
+        <div class="right-box2">
+            RIGHT BOX 2
+        </div>
+
+        <div class="right-box3">
+            RIGHT BOX 3
+        </div>
+
+    </div>
+
+</body>
+</html>

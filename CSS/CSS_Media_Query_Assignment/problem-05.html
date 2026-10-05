@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Investors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 22px;
+    color: #555;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.description {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Investors Grid */
+
+.investors {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+/* Person Image */
+
+.card > img:first-child {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #666;
+}
+
+/* Company Logo */
+
+.card .company {
+    width: 100px;
+    height: 40px;
+
+    object-fit: contain;
+
+    margin-top: 10px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+
+    .investors {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .investors {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .card > img:first-child {
+        height: 250px;
+    }
+}
+</style>
+<body>
+
+
+    <div class="container">
+
+        <h1>Our Investors</h1>
+
+        <p class="subtitle">
+            When outcomes drive you, the industry stands with you.
+        </p>
+
+        <h2>The stalwarts of tech industry by our side</h2>
+
+        <p class="description">
+            Today, we are backed by the most seasoned founders,
+            CXOs and experts of the technology industry in India.
+        </p>
+
+        <h2 class="heading">Board Members</h2>
+
+        <div class="investors">
+
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJC2Bwrznfmc5cg59JFmNoJ4jKGKp1prTJaveNifRPDQ&s=10">
+                <h3>Vijay Shekhar Sharma</h3>
+                <p>Founder & CEO</p>
+                <img class="company" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8Z7rpZbmYhr_0gVORtSUb6scpIEmxWpnlR8kFfAwbwg&s=10">
+            </div>
+
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRMbjG1hXSnR3nmNz9acfMBmElVw0EiJF_zCIy7t1DFA&s=10">
+                <h3>Kunal Shah</h3>
+                <p>Founder</p>
+                <img class="company" src="https://cdn.masaischool.com/masai-website/our-investors/CRED.png">
+            </div>
+
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfzDy9DQaut5V8aWKsU8BCpGdMgHqi-XmNOihUhHFEtQ&s=10">
+                <h3>Amrish Rau</h3>
+                <p>CEO</p>
+                <img class="company" src="https://cdn.masaischool.com/masai-website/our-investors/Pine%20Labs.png">
+            </div>
+
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8sBYE9lDi3E0InGOrrk8R6gRcIvm3Ld6nNDi9HS2z7A&s=10">
+                <h3>Sampad Swain</h3>
+                <p>Co-Founder & CEO</p>
+                <img class="company" src="https://cdn.masaischool.com/masai-website/our-investors/Instamojo.png">
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSurhxDN0Uj2vlTvPE6Ih0joet-1o3Y2FiGf3MH1KdE-A&s=10">
+                <h3>Ankush Sachdeva</h3>
+                <p>Co-Founder & CEO</p>
+                <img class="company" src="https://cdn.masaischool.com/masai-website/our-investors/ShareChat.png">
+            </div>
+
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvF_5AfcNZ5i-XuE-V6sov6rFiks6TSW4QiDxBkVjTRg&s=10">
+                <h3>Bhanu Pratap Singh</h3>
+                <p>Co-Founder & CTO</p>
+                <img class="company" src="">
+            </div>
+
+          
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_VfHyllOm7W9PIytmdAhFWMNpWUXbbzbogimdi2yZHQ&s=10">
+                <h3>Farid Ahsan</h3>
+                <p>Co-Founder & COO</p>
+                <img class="company" src="https://cdn.masaischool.com/masai-website/our-investors/ShareChat.png">
+            </div>
+
+            
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ11texLwRm3QGSps_niynWWHhc3skYwwYlqWGqqt2bTQ&s=10">
+                <h3>Amit Kumar Agarwal</h3>
+                <p>Founder & CEO</p>
+                <img class="company" src="https://cdn.masaischool.com/masai-website/our-investors/NoBroker.png">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

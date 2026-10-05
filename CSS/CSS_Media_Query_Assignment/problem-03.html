@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Query Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+
+.navigation {
+    background-color: yellow;
+    font-size: 35px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+
+
+.boxes {
+    display: flex;
+    gap: 50px;
+}
+
+.left-box,
+.right-box {
+    width: 50%;
+    height: 340px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.left-box {
+    background-color: red;
+}
+
+.right-box {
+    background-color: lime;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .navigation {
+        font-size: 45px;
+    }
+
+    .boxes {
+        display: block;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+}
+</style>
+
+<body>
+
+    <div class="container">
+
+        <div class="navigation">
+            Navigation
+        </div>
+
+        <div class="boxes">
+
+            <div class="left-box">
+                LEFT BOX
+            </div>
+
+            <div class="right-box">
+                RIGHT BOX
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
